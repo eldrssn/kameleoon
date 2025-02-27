@@ -5,9 +5,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --font-family: 'Roboto', sans-serif;
-  --second-family: 'Montserrat', sans-serif;
-  --third-family: 'Nunito', sans-serif;
+  --font-family: 'Roboto', Arial, sans-serif;
+  --second-family: 'Montserrat', Arial, sans-serif;
+  --third-family: 'Nunito', Arial, sans-serif;
 }
 
 html,
