@@ -1,7 +1,15 @@
+import { Layout } from 'components';
+import { AppProvider } from 'context/app';
 import { MainPage } from './pages';
 
 function App() {
-  return <MainPage />;
+  return (
+    <AppProvider>
+      <Layout>
+        <MainPage />
+      </Layout>
+    </AppProvider>
+  );
 }
 
 export default App;
