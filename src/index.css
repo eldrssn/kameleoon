@@ -5,6 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* fonts */
   --font-family: 'Roboto', Arial, sans-serif;
   --second-family: 'Montserrat', Arial, sans-serif;
   --third-family: 'Nunito', Arial, sans-serif;
