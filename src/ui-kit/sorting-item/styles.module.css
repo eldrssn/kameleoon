@@ -1,0 +1,25 @@
+.button {
+  cursor: pointer;
+  border: none;
+  margin-right: auto;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #999;
+  outline: none;
+  border-radius: 3px;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &:focus-visible {
+    color: #000;
+  }
+}
+
+.sortDesc {
+  rotate: 180deg;
+}

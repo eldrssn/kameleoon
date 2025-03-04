@@ -1,8 +1,12 @@
-import { useFetchData } from '@hooks';
+import { List, SearchBar } from '@components';
+import { Header } from '@ui-kit';
 
 export const MainPage = () => {
-  const { tests, sites, loading, error } = useFetchData();
-  console.log('tests', tests);
-  console.log('sites', sites);
-  return <div></div>;
+  return (
+    <>
+      <Header>Dashboard</Header>
+      <SearchBar />
+      <List />
+    </>
+  );
 };

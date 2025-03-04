@@ -1,0 +1,60 @@
+.listWrapper {
+  display: grid;
+  gap: 25px;
+  border-radius: 3px;
+  width: 954px;
+  height: 70px;
+  background: #fff;
+  width: 100%;
+  padding: 20px 12px;
+  margin-bottom: 5px;
+  border-left: 4px solid #474747;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & div {
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.itemName {
+  font-weight: 500;
+  font-size: 13px;
+  color: #474747;
+}
+.itemType {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5c5c5c;
+}
+.itemStatus {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.itemStatus_online {
+  color: #1bda9d;
+}
+.itemStatus_paused {
+  color: #ff8346;
+}
+.itemStatus_draft {
+  color: #5c5c5c;
+}
+.itemStatus_stopped {
+  color: #fe4848;
+}
+.itemSite {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5c5c5c;
+}

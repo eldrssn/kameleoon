@@ -16,6 +16,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   position: relative;
+  background: #fafafa;
 }
 
 body {

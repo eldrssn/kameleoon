@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from 'react';
+
 import { getSites, getTests } from '@api';
-import { Site, Test } from '@models';
+import { useAppContext } from '@hooks';
 
 export const useFetchData = () => {
-  const [tests, setTests] = useState<Test[]>([]);
-  const [sites, setSites] = useState<Site[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<Error | null>(null);
+  const { setTests, setSites } = useAppContext();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,21 +14,13 @@ export const useFetchData = () => {
           getTests(),
           getSites(),
         ]);
-
         setTests(testsData);
         setSites(sitesData);
       } catch (error) {
-        setError(
-          error instanceof Error ? error : new Error('An error occurred'),
-        );
         console.error('Error fetching data:', error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
-
-  return { tests, sites, loading, error };
 };

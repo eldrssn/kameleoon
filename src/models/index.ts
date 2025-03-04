@@ -23,3 +23,14 @@ export interface Test {
   status: Status;
   siteId: number;
 }
+
+export interface CombineItem {
+  siteUrl: string;
+  id: number;
+  name: string;
+  type: Type;
+  status: Status;
+  siteId: number;
+}
+
+export type SortDirectionType = 'asc' | 'desc' | null;

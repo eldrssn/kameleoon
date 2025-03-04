@@ -1,0 +1,21 @@
+.section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.noItemsBox {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noItemsText {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 60px;
+}

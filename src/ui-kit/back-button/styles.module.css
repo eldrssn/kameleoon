@@ -1,0 +1,26 @@
+.button {
+  margin-top: auto;
+  font-family: var(--third-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+  border: none;
+  background: none;
+  width: min-content;
+  padding-left: 28px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+
+    width: 9px;
+    height: 16px;
+    background: url('/src/assets/back-icon.svg') no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: 0 -50%;
+  }
+}
